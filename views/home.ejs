@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <% include navbar.ejs %>
+        <!-- <style>
+            /* body{
+                font-family: Arial;
+                margin: 0;
+            }
+            nav{
+                background: lightblue;
+                padding: 20px 10px;
+            }
+            nav ul{
+                max-width: 960px;
+                margin: 0 auto;
+                padding: 0;
+            }
+            nav li{
+                list-style-type: none;
+                display:right line-block;
+                margin: 0 10px 0 0;
+            }
+            nav a{
+                color: lightblue;
+                font-size: 18px;
+                background: rgba(255,255,255.0.2);
+                text-decoration: navy;
+                padding: 10px;
+                display: block;
+            }
+            main,header{
+                max-width: 960px;
+                margin: 30px auto;
+                padding: 0 10px;
+                color: #333;
+            } */
+        </style>
+    </head>
+    <body>
+
+        <nav>
+            <ul> <li><a href="/auth/login">LOGIN</a></li>
+                <li><a href="/auth/logout">LOGOUT</a></li>
+                <li><a href="/">HOMEPAGE</a></li>
+                <li><a href="/">HOMEPAGE</a>Profile</li>
+            </ul>
+        </nav>-->
+        <header>
+                <h1>Welcome to your profile, <%=user.username %></h1>
+        </header>
+       
+    </body>
+</html>

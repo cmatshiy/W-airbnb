@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>welcome</title>
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <style>
+           body{
+              background-color: lightseagreen;
+              background-size: cover;
+           }
+      </style>
+  </head>
+  <body>
+
+      <div class="container">
+          <div class="starter-template">
+            <h1>Add house</h1>
+            <form action="/listings" method="post">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Name" name="name">
+              </div>
+              <label for="name">Image Src</label>
+                <input type="text" class="form-control" id="image" placeholder="Image src" name="image">
+              </div>
+              <div class="form-group">
+                <label for="location">Location</label>
+                <input type="text" class="form-control" id="location" placeholder="Location" name="location">
+              </div>
+              <div class="form-group">
+                <label for="price">Price</label>
+                <input type="number" class="form-control" id="price" placeholder="Price" name="price">
+              </div>
+              <div class="form-group">
+                <label for="available">Available on</label>
+                <input type="date" class="form-control" id="available" placeholder="Available on" name="available">
+              </div>
+              <textarea class="form-control" rows="3" name="description" placeholder="Add your description here..."></textarea>
+              <button type="submit" class="btn btn-default">List your area!</button>
+            </form>
+          </div>
+        </div>
+  </body>
+</html>
+
+     

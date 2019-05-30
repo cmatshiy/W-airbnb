@@ -1,0 +1,22 @@
+.auth-form {
+  width: 25rem;
+  max-width: 80%;
+  margin: 5rem auto;
+}
+.container {
+  background-color: grey;
+  height: 700px;
+  border:1px solid tomato;
+}
+.image {
+  background-image: url("./images/images-1.jpg");
+  height: auto;
+  height: 350px;
+  max-width: 100%;
+  margin-top: 30px;
+  border:1px solid tomato;
+  border-radius: 30%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+

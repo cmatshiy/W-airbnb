@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+<style>
+  body {
+    font-family: Arial;
+    margin: 0;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  img {
+    vertical-align: middle;
+  }
+
+  /* Position the image container (needed to position the left and right arrows) */
+  .container {
+    position: relative;
+  }
+
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+</style>
+
+<body>
+
+  <h2 style="text-align:center">UNIQUE CLASSIC STYLED ROOMS</h2>
+
+  <div class="container">
+    <div class="mySlides">
+      <div class="numbertext">1 / 6</div>
+      <img src="https://www.hok.com/uploads/2017/02/03/01-alfaisaliah-deluxesuite.jpg" style="width:100%">
+      <div class="Top-left">Luxury Bed with TV space</div>
+      <div class="bottom-left">R1 890 per night</div>
+      <a class="active" href="/payment_form">Click Me to Book</a>
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 6</div>
+      <img
+        src="https://www.milansuitehotel.com/assets/components/phpthumbof/cache/Naked_Rooms_05.0a9a535a23039bbc27fd38013ae90256.jpg"
+        style="width:100%">
+      <div class="Top-left">luxury comfort bed with TV</div>
+      <div class="bottom-left">R1 640 per night</div>
+      <a class="active" href="/payment_form">Click Me to Book</a>
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 6</div>
+      <img src="https://bluehawkboosters.org/wp-content/uploads/2018/09/Luxury-Hotel-Bedroom-Rug.jpg"
+        style="width:100%">
+      <div class="Top-left">Lavender Blue and white room with TV</div>
+      <div class="bottom-left">R1 700 per night</div>
+      <a class="active" href="/payment_form">Click Me to Book</a>
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 6</div>
+      <img src="https://hautegrandeur.com/spas/wp-content/uploads/2017/07/Wynn-4.jpg" style="width:100%">
+      <div class="Top-left">Laxurious rooms including this bathroom suit</div>
+      <div class="bottom-left">R3000 per night</div>
+      <a class="active" href="/payment_form">Click Me to Book</a>
+
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">5 / 6</div>
+      <img
+        src="http://static.asiawebdirect.com/m/kl/portals/sarawak-hotels-com/shared/teasersL/teaser_auto_gen/top10-hotels-kuching/teaserMultiLarge/imageHilight/teaser.jpeg.jpg"
+        style="width:100%">
+      <div class="Top-left">Our Laxurious Pool</div>
+      <div class="bottom-left">FREE for our tenants</div>
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">6 / 6</div>
+      <img src="https://static.wixstatic.com/media/c10d1e_cb13ddaa54b849c7877c7369c7c62933~mv2.jpg" style="width:100%">
+      <div class="Top-left">Luxury Jacuzz inside some of our bedrooms</div>
+      <div class="bottom-left">FREE</div>
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    <div class="row">
+      <div class="column">
+        <img class="demo cursor"
+          src="https://static.mercuryhotels.site/uploads/hotel-room/7025/photo/the-garden-of-blues-hostel-bed-in-4-bed-mixed-dormitory-room-42_15519235911.jpg"
+          style="width:100%" onclick="currentSlide(1)">
+        <div class="bottom-left">R3 800 per night</div>
+        <a class="active" href="/payment_form">Click Me to Book</a>
+      </div>
+      <div class="column">
+        <img class="demo cursor"
+          src="https://www.oakshotels.com/uploads/minor/oaks/images/australia/victoria/wrap-on-southbank/600x400/2-bedroom/wrap-on-southbank-hotel-melbourne-2-bedroom-bed-2.jpg"
+          style="width:100%" onclick="currentSlide(2)">
+        <div class="bottom-left">R2 400 per night</div>
+        <a class="active" href="/payment_form">Click Me to Book</a>
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="https://t-ec.bstatic.com/images/hotel/max1280x900/748/74831485.jpg"
+          style="width:100%" onclick="currentSlide(3)" alt="self service room">
+        <div class="bottom-left">R4 000 per night</div>
+        <a class="active" href="/payment_form">Click Me to Book</a>
+      </div>
+      <div class="column">
+        <img class="demo cursor"
+          src="https://images.mirai.com/INFOROOMS/89347957/meM5hRn3CNMJjtecdrcE/meM5hRn3CNMJjtecdrcE_original.jpg"
+          style="width:100%" onclick="currentSlide(4)">
+        <div class="bottom-left">R3 600 per night</div>
+        <a class="active" href="/payment_form">Click Me to Book</a>
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="http://www.myeres.com/cgi-bin/MyRes40/Hotels/Gatewaydallas/RoomPics/SPAKING.JPG"
+          style="width:100%" onclick="currentSlide(5)">
+        <div class="bottom-left">R3 000 per night</div>
+        <a class="active" href="/payment_form">Click Me to Book</a>
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="http://hotelportdelaselva.com/wp-content/uploads/2014/09/massatges_7.jpg"
+          style="width:100%" onclick="currentSlide(6)">
+        <div class="bottom-left">R2 700 per night</div>
+        <a class="active" href="/payment_form">Click Me to Book</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = slides.length }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+      captionText.innerHTML = dots[slideIndex - 1].alt;
+    }
+  </script>
+
+</body>
+
+</html>
